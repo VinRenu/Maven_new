@@ -1,3 +1,3 @@
 FROM tomcat:8
 # take a war file and copy the same to tomacat
-RUN $(pwd)/target/mvn-hello-world.war:/usr/local/tomcat/webapps/mvn-hello-world.war
+RUN target/mvn-hello-world.war:/usr/local/tomcat/webapps/
