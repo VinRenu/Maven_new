@@ -1,5 +1,8 @@
-FROM tomcat:8
-# take a war file and copy the same to tomacat
-WORKDIR /usr/local/tomcat/webapps/myapp/
-COPY /target/mvn-hello-world.war  /usr/local/tomcat/webapps/mvn-hello-world.war
+FROM tomcat:7.0.90-jre8
+WORKDIR  /app1
+
+ADD mvn-hello-world.war /usr/local/tomcat/webapps/mvn-hello-world.war
+
+EXPOSE 8080
+
 
