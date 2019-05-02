@@ -1,5 +1,5 @@
 FROM tomcat:7.0.90-jre8
-WORKDIR  /var
+WORKDIR  /doc1
 
 ADD mvn-hello-world.war  /usr/local/tomcat/webapps/mvn-hello-world.war
 
