@@ -3,4 +3,4 @@ WORKDIR  /home
 
 ADD target/mvn-hello-world.war /usr/local/tomcat/webapps
 
-EXPOSE 8080
+EXPOSE 8090
